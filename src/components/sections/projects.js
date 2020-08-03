@@ -184,15 +184,6 @@ const Projects = ({ data }) => {
                                 <FormattedIcon name="GitHub" />
                               </StyledIconLink>
                             )}
-                            {external && (
-                              <StyledIconLink
-                                href={external}
-                                target="_blank"
-                                rel="nofollow noopener noreferrer"
-                                aria-label="External Link">
-                                <FormattedIcon name="External" />
-                              </StyledIconLink>
-                            )}
                           </StyledProjectLinks>
                         </StyledProjectHeader>
                         <StyledProjectName>{title}</StyledProjectName>
