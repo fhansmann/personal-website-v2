@@ -68,7 +68,7 @@ const Footer = () => (
         href="https://github.com/fhansmann"
         target="_blank"
         rel="nofollow noopener noreferrer">
-        <div>Florian Hansmann - 2020 | Built with Gatsby | Hosted on Netlify</div>
+        <div>Built with Gatsby | Hosted on Netlify</div>
 
       </StyledGitHubLink>
     </StyledMetadata>
