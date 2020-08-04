@@ -1,9 +1,7 @@
 module.exports = {
-  siteTitle: 'Florian Hansmann | Software Developer',
-  siteDescription:
-    'Florian Hansmann is a Front-end software engineer based in Munich, Germany.',
-  siteKeywords:
-    'Florian Hansmann, front-end engineer, web developer, javascript, react',
+  siteTitle: 'Florian Hansmann | Front-End Developer',
+  siteDescription: 'Florian Hansmann is a Front-end software engineer based in Munich, Germany.',
+  siteKeywords: 'Florian Hansmann, front-end engineer, web developer, javascript, react',
   siteUrl: 'https://www.florians.dev',
   siteLanguage: 'en_US',
   googleAnalyticsID: 'UA-45666519-2',
