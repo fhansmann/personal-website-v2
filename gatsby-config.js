@@ -13,6 +13,9 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-netlify`,
+    `gatsby-plugin-preact`,
+    `gatsby-plugin-advanced-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -36,7 +39,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-        endpoint: 'https://gmail.us10.list-manage.com/subscribe/post?u=ed01ea28210c6f80750334ad6&amp;id=13ca7a3e9b',
+        endpoint:
+          'https://gmail.us10.list-manage.com/subscribe/post?u=ed01ea28210c6f80750334ad6&amp;id=13ca7a3e9b',
       },
     },
     {

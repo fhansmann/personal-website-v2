@@ -33,6 +33,8 @@ const StyledSocialLink = styled.a`
   svg {
     width: 20px;
     height: 20px;
+    fill: ${colors.lightNavy}
+    }
   }
 `;
 const StyledMetadata = styled.div`
@@ -41,7 +43,7 @@ const StyledMetadata = styled.div`
   line-height: 1;
 `;
 const StyledGitHubLink = styled.a`
-  color: ${colors.lightSlate};
+  color: ${colors.darkNavy};
   padding: 10px;
 `;
 
@@ -69,7 +71,6 @@ const Footer = () => (
         target="_blank"
         rel="nofollow noopener noreferrer">
         <div>Built with Gatsby | Hosted on Netlify</div>
-
       </StyledGitHubLink>
     </StyledMetadata>
   </StyledContainer>

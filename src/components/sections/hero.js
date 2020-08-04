@@ -12,16 +12,17 @@ const StyledContainer = styled(Section)`
   align-items: flex-start;
   min-height: 100vh;
   ${media.tablet`padding-top: 150px;`};
+  ${media.phone`padding-top: 75px;`};
   div {
     width: 100%;
   }
 `;
 const StyledFlexContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
+  ${mixins.flexBetween};
   align-items: flex-start;
-  flex-wrap: wrap;
+  ${media.tablet`display: block;`};
 `;
+
 const StyledContentContainer = styled.div`
   padding: 0px,
   margin: 0px;
@@ -65,8 +66,10 @@ const StyledDescription = styled.div`
   }
 `;
 const StyledPicture = styled.div`
+  position: relative;
   max-width: 270px;
   max-height: 270px;
+  ${media.phone`margin-left: 25px;`};
 `;
 
 const Hero = ({ data }) => {
@@ -111,13 +114,13 @@ const Hero = ({ data }) => {
           </TransitionGroup>
         </StyledContentContainer>
         <TransitionGroup component={null}>
-          {isMounted &&
-              <CSSTransition classNames="fadeup" >
-                <StyledPicture style={{ transitionDelay: '700ms' }}>
-                  <FormattedIcon name={'Avatar'} />
-                </StyledPicture>
-              </CSSTransition>
-          }
+          {isMounted && (
+            <CSSTransition classNames="fadeup">
+              <StyledPicture style={{ transitionDelay: '700ms' }}>
+                <FormattedIcon name={'Avatar'} />
+              </StyledPicture>
+            </CSSTransition>
+          )}
         </TransitionGroup>
       </StyledFlexContainer>
     </StyledContainer>

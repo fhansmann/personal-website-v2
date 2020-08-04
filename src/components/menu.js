@@ -24,17 +24,17 @@ const StyledContainer = styled.div`
 const Sidebar = styled.aside`
   ${mixins.flexCenter};
   flex-direction: column;
-  background-color: ${colors.lightNavy};
+  background-color: ${colors.green};
   padding: 50px;
-  width: 50vw;
+  width: 30vw;
+  min-height: 300px;
   height: 100%;
   position: relative;
   right: 0;
   margin-left: auto;
   font-family: ${fonts.SFMono};
-  box-shadow: -10px 0px 30px -15px ${colors.shadowNavy};
-  ${media.thone`padding: 25px;`};
-  ${media.phablet`width: 75vw;`};
+  ${media.phone`padding: 25px;`};
+  ${media.tablet`width: 30vw;`};
   ${media.tiny`padding: 10px;`};
 `;
 const NavLinks = styled.nav`
@@ -68,7 +68,6 @@ const NavLink = styled(Link)`
   padding: 3px 20px 20px;
   width: 100%;
 `;
-
 
 const Menu = ({ menuOpen, toggleMenu }) => {
   const handleMenuClick = e => {

@@ -71,7 +71,7 @@ const StyledHamburgerBox = styled.div`
   height: 24px;
 `;
 const StyledHamburgerInner = styled.div`
-  background-color: ${colors.green};
+  background-color: ${colors.lightNavy};
   position: absolute;
   width: ${theme.hamburgerWidth}px;
   height: 2px;
@@ -90,7 +90,7 @@ const StyledHamburgerInner = styled.div`
   &:after {
     content: '';
     display: block;
-    background-color: ${colors.green};
+    background-color: ${colors.lightNavy};
     position: absolute;
     left: auto;
     right: 0;
