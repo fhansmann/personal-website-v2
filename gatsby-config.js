@@ -1,5 +1,9 @@
 const config = require('./src/config');
 
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: config.siteTitle,
@@ -35,8 +39,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-        endpoint:
-          'https://gmail.us10.list-manage.com/subscribe/post?u=ed01ea28210c6f80750334ad6&amp;id=13ca7a3e9b',
+        endpoint: process.env.MAILCHIMP_ENDPOINT,
       },
     },
     {
@@ -140,7 +143,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: config.googleAnalyticsID,
+        trackingId: process.env.GA_TRACKING_ID,
       },
     },
   ],
