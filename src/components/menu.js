@@ -34,7 +34,7 @@ const Sidebar = styled.aside`
   margin-left: auto;
   font-family: ${fonts.SFMono};
   ${media.phone`padding: 25px;`};
-  ${media.tablet`width: 30vw;`};
+  ${media.tablet`width: 50vw;`};
   ${media.tiny`padding: 10px;`};
 `;
 const NavLinks = styled.nav`
