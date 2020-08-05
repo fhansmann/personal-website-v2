@@ -12,7 +12,7 @@ const StyledContainer = styled(Section)`
   align-items: flex-start;
   min-height: 100vh;
   ${media.tablet`padding-top: 150px;`};
-  ${media.phone`padding-top: 90px;`};
+  ${media.phone`padding-top: 85px;`};
   div {
     width: 100%;
   }
