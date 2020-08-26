@@ -4,6 +4,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { theme, mixins, media, Section } from '@styles';
 import { FormattedIcon } from '@components/icons';
+import { Link } from 'gatsby';
 const { colors, fontSizes, fonts, navDelay, loaderDelay } = theme;
 
 const StyledContainer = styled(Section)`
@@ -71,6 +72,14 @@ const StyledPicture = styled.div`
   max-height: 270px;
   ${media.phone`margin-left: 25px;`};
 `;
+const StyledResume = styled.a`
+  ${mixins.bigButton};
+  margin-top: 50px;
+`;
+const StyledWorkLink = styled(Link)`
+  ${mixins.bigButton};
+  margin-top: 50px;
+`;
 
 const Hero = ({ data }) => {
   const [isMounted, setIsMounted] = useState(false);
@@ -97,8 +106,23 @@ const Hero = ({ data }) => {
       dangerouslySetInnerHTML={{ __html: html }}
     />
   );
+  const five = () => (
+    <div style={{ transitionDelay: '500ms' }}>
+      <StyledResume
+        href="src/public/static/resume.pdf"
+        target="_blank"
+        rel="nofollow noopener noreferrer">
+        Resume
+      </StyledResume>
+    </div>
+  );
+  const six = () => (
+    <div style={{ transitionDelay: '500ms' }}>
+      <StyledWorkLink to="/work">Looking for work!</StyledWorkLink>
+    </div>
+  );
 
-  const items = [one, two, three, four];
+  const items = [one, two, three, four, five, six];
 
   return (
     <StyledContainer>

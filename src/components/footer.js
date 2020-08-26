@@ -44,7 +44,11 @@ const StyledMetadata = styled.div`
 `;
 const StyledGitHubLink = styled.a`
   color: ${colors.darkNavy};
-  padding: 10px;
+  padding: 7px;
+`;
+const StyledName = styled.div`
+  color: ${colors.darkNavy};
+  padding: 7px;
 `;
 
 const Footer = () => (
@@ -72,6 +76,9 @@ const Footer = () => (
         rel="nofollow noopener noreferrer">
         <div>Built with Gatsby | Hosted on Netlify</div>
       </StyledGitHubLink>
+      <StyledName>
+        <div>Inspired by Brittany Chiang</div>
+      </StyledName>
     </StyledMetadata>
   </StyledContainer>
 );

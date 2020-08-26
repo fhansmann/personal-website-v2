@@ -45,13 +45,7 @@ module.exports = {
           'https://gmail.us10.list-manage.com/subscribe/post?u=ed01ea28210c6f80750334ad6&amp;id=13ca7a3e9b',
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/projects`,
-        name: `projects`,
-      },
-    },
+
     {
       resolve: `gatsby-transformer-remark`,
       options: {

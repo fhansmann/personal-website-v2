@@ -4,17 +4,14 @@ avatar: './me.jpg'
 skills:
   - JavaScript (ES6+)
   - React.js
-  - Gatsby
+  - Gatsby.js
   - Next.js
   - Styled Components
   - Material UI
   - Tailwind CSS
-  - Green Sock
-  - Three.js
-
 ---
 
-Hello! I'm Florian, a front-end developer focused on React JS. 
+Hello! I'm Florian, a front-end developer focused on React JS.
 
 I am passionate about the web and its technologies and love creating things. My goal it to always build intuitive products that bring joy to the people using them.
 
